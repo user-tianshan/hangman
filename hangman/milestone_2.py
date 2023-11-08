@@ -9,6 +9,7 @@ print(word)
 guess = input("Enter a single letter :")
 
 if (len(guess) ==1 and (guess >= 'a' and guess <= 'z') or (guess >= 'A' and guess <= 'Z')):
-    print(guess, "Good guess")
+    message = guess, "Good guess"
 else:
-    print(guess, "Oops! That is not a valid input")
+    message = guess, "Oops! That is not a valid input"
+print(message)
