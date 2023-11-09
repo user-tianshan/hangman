@@ -3,6 +3,8 @@ import random
 
 def check_guess(guess, word):
     guess = guess.lower()
+    word = word.lower()
+    print(guess)
     if word.count(guess):
         print("Good guess!", guess, "is in the word.")
     else:
