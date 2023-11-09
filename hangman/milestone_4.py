@@ -1,25 +1,14 @@
-import random
+class Hangman:
+    import random
 
-word_list = ["Apple", "Orange", "Pear", "Grape", "Peach"]
-print(word_list)
+    def __init__(self, word_list, num_lives = 5):
 
-word = random.choice(word_list)
-print(word)
+        self.word = word_list
+        self.word_guessed = []
+        self.num_letters = 0
+        self.num_lives = num_lives
+        self.word_list = word_list
+        self.list_of_guesses = []
 
-conditions_not_met = True
-guess_not_in_word = True
-message = ""
+    
 
-while (conditions_not_met or guess_not_in_word) :
-    guess = input("Enter a single letter :")
-    if (len(guess) == 1 and (guess.isalpha())):
-        conditions_not_met = False
-        if word.count(guess):
-            print("Good guess!", guess, "is in the word.")
-            break
-        else:
-            print( "Sorry,", guess, " is not in the word. Try again.")
-            continue
-    else:
-        message = guess, "Invalid letter. Please, enter a single alphabetical character."
-    print(message)
