@@ -12,6 +12,7 @@ class Hangman:
            
 
     def check_guess(self, guess, word):
+        """This function checks if the guessed letter is in the word """
         self.guess = guess.lower()
         self.word =  word.lower()
                     
@@ -39,6 +40,7 @@ class Hangman:
             
                 
     def ask_for_input(self):
+        """ Receives input from the user and checks for the correct format befoer passing to the check_guess function"""
         self.word_list = ["Apple", "Oraange", "Peear", "Graepe", "Peaach"]
         print(self.word_list)
         self.word = self.random.choice(self.word_list)
