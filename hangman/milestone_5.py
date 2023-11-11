@@ -1,6 +1,5 @@
 import random
 
-
 def check_guess(guess, word):
     guess = guess.lower()
     word = word.lower()
