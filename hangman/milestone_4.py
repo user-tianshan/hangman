@@ -31,11 +31,12 @@ class Hangman:
                 print(self.num_letters, "letters remaining")
                 continue
 
-            elif word.count(guess) == 0:
-                print("Sorry,", guess, "is not in the word")
-                self.num_lives -= 1
-                print("You have", self.num_lives, "lives left")
-                break
+            else:
+                if word.count(guess) == 0:
+                    print("Sorry,", guess, "is not in the word")
+                    self.num_lives -= 1
+                    print("You have", self.num_lives, "lives left")
+                    break
       
             
                 
