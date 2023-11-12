@@ -32,7 +32,7 @@ class Hangman:
                 continue
 
             else:
-                if  self.word.count(self.guess) == 0:
+                if self.word.count(self.guess) == 0:
                     print("Sorry,", guess, "is not in the word")
                     self.num_lives -= 1
                     print("You have", self.num_lives, "lives left")
@@ -60,8 +60,4 @@ class Hangman:
           
 my_hangman = Hangman()
 my_hangman.ask_for_input()
-
-
-
-    
 
