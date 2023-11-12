@@ -6,9 +6,7 @@ class Hangman:
 
     def __init__(self, word_list = [], num_lives = 0, word_length = True, game_not_over = True):
 
-        self.word = word_list
         self.word_guessed = []
-       # self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.word_list = word_list
         self.list_of_guesses = []
@@ -25,7 +23,7 @@ class Hangman:
         if self.word_length == True : 
             for n in range(0, (len(self.word))):
                 self.word_guessed.insert(n, "_")
-            self.num_letters = len(set(self.word)) + 1      
+            self.num_letters = len(set(self.word)) + 1    
             self.word_length =  False
       
         for n in range(0, len(self.word)):
@@ -70,8 +68,7 @@ class Hangman:
             else:
                 self.check_guess(guess, self.word, self.num_lives)
                 self.list_of_guesses.append(guess)
-        return self.game_not_over
-             
+           
           
 
     def play_game(self, word_list):
