@@ -27,6 +27,7 @@
   The game is contained in a single python file.
   From the command prompt with python installed and milestone_5.py in the same directory, just type python milestone_5.py  to start the game.
 
+
 ## How to play the game
 Just follow the intructions to enter a letter to guess the word. Only 5 failed attempts are allowed before losing. The game is won when all letters are guessed correctly.  
    
